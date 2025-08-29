@@ -123,7 +123,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: calc(0px + var(--spacing-6)) 0 var(--spacing-6);
+    padding: var(--spacing-6) var(--spacing-4); /* Ajuste aqui */
 }
 
 .nav-brand {
@@ -240,7 +240,7 @@ html {
 
 /* Hero Section com design mais impactante */
 .hero {
-    padding: calc(80px + var(--spacing-20)) 0 var(--spacing-20);
+    padding: calc(80px + var(--spacing-20)) 0 var(--spacing-12);
     position: relative;
     overflow: hidden;
 }
@@ -393,7 +393,9 @@ html {
 }
 
 /* Services Section com cards mais elegantes */
+/* No seu style.css */
 .services {
+    overflow: hidden; /* Impede o colapso de margens */
     padding: var(--spacing-20) 0;
     background: var(--white);
     position: relative;
@@ -863,7 +865,7 @@ html {
 
 /* Footer mais elegante */
 .footer {
-    padding: var(--spacing-12) 0;
+    padding: var(--spacing-4) 0;
     background: var(--gray-900);
     color: var(--white);
     position: relative;
@@ -887,16 +889,18 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--spacing-4);
-    margin-bottom: var(--spacing-6);
+    gap: var(--spacing-0);
+    margin-bottom: var(--spacing-0);
 }
 
 .footer-logo-image {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     object-fit: contain;
     filter: brightness(0) invert(1);
     transition: var(--transition-normal);
+    margin-top: -10px;
+    margin-bottom: -30px; 
 }
 
 .footer-logo:hover .footer-logo-image {
