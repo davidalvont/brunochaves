@@ -123,6 +123,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: calc(0px + var(--spacing-6)) 0 var(--spacing-6);
 }
 
 .nav-brand {
